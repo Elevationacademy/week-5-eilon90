@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for = "furniture">Type the piece of forniture's name</label>
+    <input id = "furniture" type="text">
+    <button onclick = "displayPrice()">submit</button><br>
+    <label for = "buy">What do you want to buy?</label>
+    <input id = "buy" type = "text">
+    <button onclick="buy()">buy</button>
+
+    <script id = "fur-template" type = "text/x-handlebars-template">
+        <p>{{price}}</p>
+    </script>
+
+    <script id = "buy-template" type = "text/x-handlebars-template">
+        <p>{{text}}</p>
+    </script>
+
+    
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
